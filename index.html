@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    
+        <header>
+            <nav class="navbar">
+                <img src="/logos/unnamed.jpg" alt="logo"        id="logo">               
+                <ul class="nav-item">
+                    <li><a href="#" class="a">Home</a></li>
+                    <li><a href="#about" class="a">About</a></li>
+                    <li><a href="#skills" class="a">Skills</a></li>
+                    <li><a href="#contact" class="a">Contact</a></li>    
+                </ul>
+            </nav>
+        </header>
+        <section class="s1">
+            <hr style="color: white;">
+            <div class="typing-container">
+                <h1 class="typing-text">Hey Folks , I am Jatin</h1>
+            </div>
+            <div class="carousel-container">
+    
+    <div class="slide fade">
+        <img src="https://picsum.photos/1200/400?random=1" alt="Image 1">
+        <div class="caption">Welcome to My World</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://picsum.photos/1200/400?random=2" alt="Image 2">
+        <div class="caption">Web Development Skills</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://picsum.photos/1200/400?random=3" alt="Image 3">
+        <div class="caption">Creative Designs</div>
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+</div>
+<hr style="margin:10px;">
+            <section id ="about">
+    
+    <div class="container">
+        
+        <div class="about-image">
+            <img src="logos/pro.jpg" alt="Profile Picture">
+        </div>
+
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <h3 class="role">Freelance Web Developer (PHP & Laravel)</h3>
+            
+            <p>
+                Hello! I am a passionate developer focused on building clean, efficient, and scalable web applications. 
+                With a strong foundation in <strong>PHP and Laravel</strong>, I am currently expanding my stack into 
+                <strong>Node.js and Web3 technology</strong>.
+            </p>
+            
+            <p>
+                When I'm not coding task managers or cafe websites, you might find me exploring 
+                blockchain protocols or managing my own Minecraft server.
+            </p>
+
+            <div class="skills-row">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>React</span>
+                <span>Python</span>
+                <span>C</span>
+                <span>C++</span>
+            </div>
+
+            <a href="#contact" class="btn-hire">Hire Me</a>
+        </div>
+
+    </div>
+
+            </section>
+            <section id ="skills">
+                <h1 style="text-align: left; font-size: 4.5rem;">PROJECTS</h1>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="/logos/music.webp" alt="Music App">
+        </div>
+        <div class="project-info">
+            <h3>Music player</h3>
+            <p>
+                A browser-based music player created to learn the fundamentals of JavaScript and the HTML5 Audio API. Includes playlist navigation, song duration calculation, and dynamic play/pause controls
+            </p>
+            <a href="https://github.com/jatin-panchal1/music-player" class="view-btn">View Project &rarr;</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="/logos/download.jpg" alt="Cafe Website">
+        </div>
+        <div class="project-info">
+            <h3>Cafe Landing Page</h3>
+            <p>
+                A modern, responsive website for a local coffee shop. 
+                Built using <strong>HTML5, CSS3, and JavaScript</strong> with a focus on SEO and 
+                fast loading times. Includes a dynamic menu and contact form.
+            </p>
+            <a href="#" class="view-btn">View Project &rarr;</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-image">
+            <img src="/logos/hms.jpg" alt="Minecraft Server Portal">
+        </div>
+        <div class="project-info">
+            <h3>Hospital Management</h3>
+            <p>
+                A comprehensive web application designed to streamline hospital operations. Built with PHP and MySQL, it features a robust backend for managing patient records, doctor schedules, and appointment bookings. Includes a secure admin dashboard for staff to handle admissions and discharge summaries
+            </p>
+            <a href="https://github.com/jatin-panchal1/hospital-mangement-system" class="view-btn">View Project &rarr;</a>
+        </div>
+    </div>
+        </section>
+        <section class="contact-section" id ="contact">
+    <div class="contact-container">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind? Let's talk.</p>
+
+        <form action="#" method="POST" class="contact-form">
+            
+            <div class="form-group">
+                <input type="text" id ="name" required placeholder=" ">
+                <label for="name">Your Name</label>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id ="email" required placeholder=" ">
+                <label for="email">Your Email</label>
+            </div>
+
+            <div class="form-group">
+                <textarea id ="message" rows="5" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+
+        </form>
+        <div class="social-links">
+    <p>Or connect with me on:</p>
+    <a href="https://github.com/Jatin06panchal-web" target="_blank" class="github-icon" title="My GitHub">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.05-.015-2.055-3.33.72-4.035-1.605-4.035-1.605-.54-1.38-1.335-1.755-1.335-1.755-1.087-.735.09-.72.09-.72 1.2.075 1.83 1.23 1.83 1.23 1.065 1.815 2.805 1.29 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.225 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405 1.02 0 2.04.135 3 .405 2.28-1.545 3.285-1.23 3.285-1.23.66 1.695.24 2.925.12 3.225.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+    </a>
+</div>
+
+    </div>
+</section>
+        </section>        
+    
+    <script src="index.js"></script>
+</body>
+</html>
